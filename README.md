@@ -4,9 +4,9 @@
 
 > Status do Projeto: ✔️ Concluido ✔️
 
-### Este é um projeto Java que demonstra uma solução para o "Problema dos Trens" usando threads. O "Problema dos Trens" é um problema clássico de concorrência que envolve a coordenação de trens que viajam em direções opostas ou iguais em uma via férrea.
+### Este é um projeto Java que demonstra três soluções para o "Problema dos Trens" usando threads. O "Problema dos Trens" é um problema clássico de concorrência que envolve a coordenação de trens que viajam em direções opostas ou iguais em uma via férrea.
 
-## Descrição do Problema:
+## ❓ Descrição do Problema ❓
 
 - Existem duas estações de trem, A e B.
 - Trens partem de ambas as estações e viajam em direções opostas ou iguais ao longo de uma linha de trilhos.
@@ -14,7 +14,7 @@
 - Trens não podem colidir na linha de trilhos.
 - Precisamos coordenar a passagem dos trens de forma que eles possam atravessar a linha de trilhos com segurança.
 
-## Solução
+## 💡 Solução 💡
 
 ### Este projeto oferece três soluções em Java para o "Problema dos Trens" usando threads variáveis de travamento, estrita alternância e solução de Peterson para garantir que os trens possam atravessar a linha de trilhos de forma segura e coordenada.
 

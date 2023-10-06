@@ -489,31 +489,29 @@ public class trem1 extends Thread{
     * Método para controlar o travamento do trilho 1.
     */
 	  public void trilho1Travamento(){
-			 // Implementação do controle de travamento do trilho 1
-		  while(controle.getVariavelTravamento1() == 1){
-		    try {
-	        trem1.sleep(2);
-	      } catch (InterruptedException e) {
-	        e.printStackTrace();
-	      }
-	    }
-	  controle.setVariavelTravamento1(1);
+			while(controle.getVariavelTravamento1() == 1){
+				try {
+					trem1.sleep(2);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+			controle.setVariavelTravamento1(1);
 		}
 
 		/**
     * Método para controlar o travamento do trilho 2.
     */	
 	  public void trilho2Travamento(){
-			// Implementação do controle de travamento do trilho 2
-		    while(controle.getVariavelTravamento2() == 1){
-		      try {
-		        trem1.sleep(2);
-		      } catch (InterruptedException e) {
-		        e.printStackTrace();
-		      }
-		    }
-		    controle.setVariavelTravamento2(1);
-		  }
+			while(controle.getVariavelTravamento2() == 1){
+				try {
+					trem1.sleep(2);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+			controle.setVariavelTravamento2(1);
+		}
 
     /**
      * Método para controlar a estrita alternância do trilho 1.

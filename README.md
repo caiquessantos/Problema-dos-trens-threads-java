@@ -18,7 +18,9 @@
 
 ### Este projeto oferece três soluções em Java para o "Problema dos Trens" usando threads variáveis de travamento, estrita alternância e solução de Peterson para garantir que os trens possam atravessar a linha de trilhos de forma segura e coordenada.
 
-![Vídeo de demonstração](https://github.com/caiquessantos/Problema-dos-trens-threads-java/issues/1#issue-1929371221)
+https://github.com/caiquessantos/Problema-dos-trens-threads-java/assets/106163735/b67070aa-3862-4293-8fff-d725db2794ee
+
+-trens-threads-java/issues/1#issue-1929371221)
 
 ## ⚠️ Pré-requisitos ⚠️
 

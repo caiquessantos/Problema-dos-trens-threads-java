@@ -486,7 +486,7 @@ public class trem1 extends Thread{
     }
 	
 		/**
-    * Método para controlar o travamento do trilho 1.
+    * Método para controlar o travamento dos trilhos.
     */
 	  public void trilho1Travamento(){
 			while(controle.getVariavelTravamento1() == 1){
@@ -498,11 +498,7 @@ public class trem1 extends Thread{
 			}
 			controle.setVariavelTravamento1(1);
 		}
-
-		/**
-    * Método para controlar o travamento do trilho 2.
-    */	
-	  public void trilho2Travamento(){
+	public void trilho2Travamento(){
 			while(controle.getVariavelTravamento2() == 1){
 				try {
 					trem1.sleep(2);

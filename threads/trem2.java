@@ -43,26 +43,26 @@ public class trem2 extends Thread {
 				if ( "VARIAVEL DE TRAVAMENTO".equals(controle.getChoiceBox2()
 					.getValue())) {
 
-					moverXfrente(130, 0);
-					moverYcima(30, -90);
-					
-					trilho1Travamento();
-					moverYcima(50, -90);
-					moverXfrente(170, 0);
-					controle.setVariavelTravamento1(0);
-					
-					moverYbaixo(80, 90);
-					moverXfrente(170, 0);
-					moverYcima(30, 270);
-					
-					trilho2Travamento();
-					moverYcima(50, 270);
-					moverXfrente(170, 0);
-					controle.setVariavelTravamento2(0);
-					
-					moverYbaixo(80, 90);
-					moverXfrente(170, 0);
-					controle.setPosicaoTrem2(0, 270);	
+						moverXfrente(130, 0);
+						moverYcima(30, -90);
+						
+						trilho1Travamento();
+						moverYcima(50, -90);
+						moverXfrente(170, 0);
+						controle.setVariavelTravamento1(0);
+						
+						moverYbaixo(80, 90);
+						moverXfrente(170, 0);
+						moverYcima(30, 270);
+						
+						trilho2Travamento();
+						moverYcima(50, 270);
+						moverXfrente(170, 0);
+						controle.setVariavelTravamento2(0);
+						
+						moverYbaixo(80, 90);
+						moverXfrente(170, 0);
+						controle.setPosicaoTrem2(0, 270);		
 									
 				} else if("ESTRITA ALTERNANCIA".equals(controle.getChoiceBox2().getValue())){
 					moverXfrente(130, 0);
@@ -115,19 +115,19 @@ public class trem2 extends Thread {
 				if ("VARIAVEL DE TRAVAMENTO".equals(controle.getChoiceBox2()
 						.getValue())) {
 					
-					trilho2Travamento();
-					moverYcima(50, 90);
-					moverXtras(170, 0);
-					controle.setVariavelTravamento2(0);
-					
-					moverYbaixo(80, 270);
-					moverXtras(170, 0);
-					moverYcima(30, 90);
-
-					trilho1Travamento();
-					moverYcima(50, 90);
-					moverXtras(170, 0);
-					controle.setVariavelTravamento1(0);
+							trilho2Travamento();
+							moverYcima(50, 90);
+							moverXtras(170, 0);
+							controle.setVariavelTravamento2(0);
+							
+							moverYbaixo(80, 270);
+							moverXtras(170, 0);
+							moverYcima(30, 90);
+		
+							trilho1Travamento();
+							moverYcima(50, 90);
+							moverXtras(170, 0);
+							controle.setVariavelTravamento1(0);
 					
 				}else if("ESTRITA ALTERNANCIA".equals(controle.getChoiceBox2().getValue())){
 					trilho2Estrita();
@@ -470,7 +470,7 @@ public class trem2 extends Thread {
     }
 
 		/**
-    * Método para garantir a travamento no trilho 1.
+    * Método para garantir a travamento nos trilhos.
     */
 	  public void trilho1Travamento(){
 			while(controle.getVariavelTravamento1() == 1){
@@ -482,11 +482,7 @@ public class trem2 extends Thread {
 			}
 			controle.setVariavelTravamento1(1);
 		}
-
-		/**
-    * Método para garantir a travamento no trilho 2.
-    */
-	  public void trilho2Travamento(){
+	public void trilho2Travamento(){
 			while(controle.getVariavelTravamento2() == 1){
 				try {
 					trem1.sleep(2);

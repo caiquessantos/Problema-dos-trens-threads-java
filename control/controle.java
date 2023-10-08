@@ -84,8 +84,8 @@ public class controle implements Initializable {
 
 		// Configura opções do ChoiceBox2
 		choiceBox2.setItems(
-				FXCollections.observableArrayList("VARIAVEL DE TRAVAMENTO", "ESTRITA ALTERNANCIA", "SOLUCAO DE PETERSON"));
-		choiceBox2.setValue("ESTRITA ALTERNANCIA");
+				FXCollections.observableArrayList("SOLUCAO DE PETERSON", "ESTRITA ALTERNANCIA", "VARIAVEL DE TRAVAMENTO"));
+		choiceBox2.setValue("SOLUCAO DE PETERSON");
 
 		// Configura visibilidade dos componentes
 		trem01.setVisible(false);
@@ -113,6 +113,7 @@ public class controle implements Initializable {
 		this.setVariavelTravamento1(0);
 		this.setVariavelTravamento2(0);
 		this.setEstritaAlternancia1(0);
+
 		this.setEstritaAlternancia2(0);
 		this.bandeira1 = new boolean[2];
 		this.bandeira2 = new boolean[2];

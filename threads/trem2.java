@@ -576,12 +576,14 @@ public class trem2 extends Thread {
 	 * @return void
 	 */
 	public void trilho1Travamento() {
-		while (controle.getVariavelTravamento1() == 1) {// caso o valor retornado seja igual a 1, a thread dorme até o valor
-																										// ser diferente
-			try {
-				trem1.sleep(5);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
+		if (controle.getVariavelTravamento1() != 0) {
+			while (controle.getVariavelTravamento1() != 0) {// caso o valor retornado seja igual a 1, a thread dorme até o
+																											// valor ser diferente
+				try {
+					trem1.sleep(5);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 			}
 		}
 		controle.setVariavelTravamento1(1);// seta a varíavel de travamento para a região crítica para 1 e entra nela
@@ -594,12 +596,15 @@ public class trem2 extends Thread {
 	 * @return void
 	 */
 	public void trilho2Travamento() {
-		while (controle.getVariavelTravamento2() == 1) {// caso o valor retornado seja igual a 1, a thread dorme até o valor
-																										// ser diferente
-			try {
-				trem1.sleep(2);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
+		if (controle.getVariavelTravamento2() != 0) {
+			while (controle.getVariavelTravamento2() != 0) {// caso o valor retornado seja igual a 1, a thread dorme até o
+																											// valor
+																											// ser diferente
+				try {
+					trem1.sleep(2);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 			}
 		}
 		controle.setVariavelTravamento2(1);// seta a varíavel de travamento para a região crítica para 1 e entra nela

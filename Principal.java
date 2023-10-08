@@ -2,7 +2,7 @@
 * Autor............: Caíque Santos Santana
 * Matricula........: 202010643
 * Inicio...........: 28/09/2023
-* Ultima alteracao.: 05/10/2023
+* Ultima alteracao.: 07/10/2023
 * Nome.............: Classe Main do Problema dos Trens
 * Funcao...........: Importa o que é necessario para iniciar e
 cria a interface gráfica.
